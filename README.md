@@ -1,6 +1,9 @@
 # DEMO-SERVCIE
 
-服务模板，unichain所有模块的代码模板，服务分多个模块：
+服务模板，unichain所有模块的代码模板，
+
+## 模块
+服务分多个模块：
 
 - unichain-demo
     - demo-application 启动模块
@@ -16,3 +19,9 @@
     - unichain-demo-entity 数据库实体模块
     - unichain-demo-pojo pojo模块
 - unichain-demo-mq mq模块 
+
+
+## TODO
+
+- 日志统一处理
+- 去除BasicErrorController
