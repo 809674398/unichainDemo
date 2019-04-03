@@ -1,0 +1,9 @@
+spring:
+  redis:
+    host: 192.168.1.38
+    port: 6379
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 0

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>demo-service</artifactId>
+        <groupId>com.unichain.demo</groupId>
+        <version>1.0-SNAPSHOTS</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>unichain-demo-base</artifactId>
+    <name>unichain-demo-base</name>
+    <modules>
+        <module>demo-base-dao</module>
+        <module>demo-base-service</module>
+        <module>demo-base-extension</module>
+        <module>demo-base-rpc</module>
+        <module>demo-base-nosql</module>
+    </modules>
+    <packaging>pom</packaging>
+
+</project>

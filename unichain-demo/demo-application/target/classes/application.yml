@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/demo
+spring:
+  profiles:
+    include: dev-dao, dev-redis
+### eureka ###
+eureka:
+  instance:
+    #hostname: 127.0.0.1
+    hostname: 192.168.1.83
+  #    ip-address: ${eureka.instance.hostname}
+  # 客户端进行Eureka注册的配置
+  client:
+    service-url:
+      #defaultZone: http://user:${eureka.password}@${eureka.instance.hostname}:8761/eureka/
+      defaultZone: http://${eureka.instance.hostname}:18761/eureka/
+

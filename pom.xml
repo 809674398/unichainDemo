@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.unichain.demo</groupId>
+  <artifactId>demo-service</artifactId>
+  <version>1.0-SNAPSHOTS</version>
+  <modules>
+    <module>unichain-demo</module>
+    <module>unichain-demo-base</module>
+    <module>unichain-demo-model</module>
+    <module>unichain-demo-mq</module>
+  </modules>
+  <name>demo-service</name>
+  <packaging>pom</packaging>
+
+  <parent>
+    <groupId>com.unichain.pom</groupId>
+    <artifactId>unichain-pom</artifactId>
+    <version>0.0.1-SNAPSHOTS</version>
+  </parent>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <unichain-framework.version>1.0.0-SNAPSHOTS</unichain-framework.version>
+    <demo.version>${project.version}</demo.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.unichain.framework</groupId>
+      <artifactId>unichain-framework</artifactId>
+      <version>${unichain-framework.version}</version>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>demo-application</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>demo-biz</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>demo-controller</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>demo-base-dao</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>demo-base-extension</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>demo-base-nosql</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>demo-base-rpc</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>demo-base-service</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>unichain-demo-entity</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>unichain-demo-pojo</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.unichain.demo</groupId>
+        <artifactId>unichain-demo-mq</artifactId>
+        <version>${demo.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+
+</project>
